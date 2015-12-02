@@ -233,68 +233,10 @@ Selector.show = function(key, callback) {
 // 根据设置初始化界面
 function initView() {
 
-    // 检查更新
-    if (!instance.isNetConnected()) {
-        instance.showToast("您的PS无法连接网络，将不能登录帐号");
-    } else {
-        var url = 'http://www.cutterman.cn/client/checkupdate?t=' + (new Date()).getTime();
-        var param = {
-            app: instance.id,
-            email: config.email,
-            version: config.version,
-            licence: config.licence
-        };
-        instance.request(url, instance.buildParam(param), function(result) {
-            if (result.update == 1) {
-                var showUpdate = cookie.get('SHOW_UPDATE');
-                if (showUpdate == null)  {
-                    cookie.set('SHOW_UPDATE', '1', 1);
-                    var text = "有新版本出来啦：" + result.version + "<br/>";
-                    text+= result.change_log.join('<br/>');
-                    var d = Dialog.show(text, function() {
-                        d.hide();
-                        instance.openURL('http://www.cutterman.cn/parker');
-                    }, "去更新");
-                }
-            }
-        });
-    }
-
     // 用户信息
     if (user.isLogin()) {
-        $('#account').text(config.email);
-        $('#current-version').text('当前版本: ' + config.version);
-        if (config.code != null) {
-            $('#licence').html('已通过授权码成功授权');
-            if (config.email == 'account@demo.com') {
-                $('#logout-btn').hide();
-                $('#buy').text('绑定帐号').click(function() {
-                    instance.openURL('http://www.cutterman.cn/auth/bind?code='+config.code);
-                });
-            } else {
-                $('.buy').hide();
-            }
-        } else {
-            if (config.licence == null) {   // 没有授权
-                var trial_start = config.trial_start*1000;   // 试用起始时间
-                var now = (new Date()).getTime();       // 当前时间
-                if (now - trial_start > 30*24*3600*1000) { // 试用期30天
-                    Dialog.show('试用期已结束，您需要购买后才能继续使用。<br/>如果已经购买，请<a href="#" onclick="location.reload(true)">刷新</a>', function() {
-                        instance.openURL('http://www.cutterman.cn/parker/buy');
-                    }, '去购买');
-                    $('#licence').html('试用期已结束，不能继续使用');
-                } else {
-                    var left = parseInt((trial_start + 30*24*3600*1000 - now)/(24*3600*1000));
-                    $('#licence').text('试用阶段，剩余' + left + '天');
-                }
-                $('#buy').click(function() {
-                    instance.openURL('http://www.cutterman.cn/parker/buy');
-                });
-            } else {
-                $('#licence').text('已授权，终生使用');
-                $('.buy').hide();
-            }
-        }
+        $('#licence').text('已授权，终生使用');
+        $('.buy').hide();
     }
 
 

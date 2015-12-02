@@ -15,9 +15,6 @@ User.prototype.init = function()
 {
     if (this.isLogin()) {
         this.hideLogin();
-        if (this.config.licence == null) {
-            this.updateLicence();
-        }
     } else {
         if (this.app.isNetConnected()) {
             this.showLogin();
@@ -37,7 +34,6 @@ User.prototype.init = function()
  */
 User.prototype.isLogin = function() {
     return true;
-    // return ((this.config.uid != null && this.config.email != null) || this.config.code != null);
 };
 
 /**
