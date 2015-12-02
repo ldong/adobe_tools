@@ -11,7 +11,7 @@
 2. rename `cutterman.zxp` to `cutterman.zip`
 3. unzip cutterman.zip
 4. create directory for unzipped files
-
+5. All extentions are inside of `~/Library/Application Support/Adobe/CEP` 
 # Reference
 
 1. [CEP 6 HTML Extension Cookbook for CC 2015 · Adobe-CEP/CEP-Resources Wiki](https://github.com/Adobe-CEP/CEP-Resources/wiki/CEP-6-HTML-Extension-Cookbook-for-CC-2015)
