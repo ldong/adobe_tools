@@ -1,4 +1,4 @@
-# How to pack and sign a adobe photoshop extension
+# How to pack and sign an adobe photoshop extension
 
 1. After development, sign via
 
@@ -11,6 +11,7 @@
 2. rename `cutterman.zxp` to `cutterman.zip`
 3. unzip cutterman.zip
 4. create directory for unzipped files
+5. All extentions are inside of `~/Library/Application Support/Adobe/CEP` 
 
 # Reference
 
