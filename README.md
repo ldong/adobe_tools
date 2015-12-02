@@ -1,4 +1,4 @@
-# How to pack and sign a adobe photoshop extension
+# How to pack and sign an adobe photoshop extension
 
 1. After development, sign via
 
