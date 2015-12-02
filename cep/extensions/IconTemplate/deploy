@@ -1,0 +1,14 @@
+#! /bin/sh
+
+########################################
+## Shell script created by xiaoqiang
+## @brief
+## @date
+########################################
+
+if [ ! -d '/Users/xiaoqiang/Library/Application Support/Adobe/CEP/extensions/IconTemplate' ]; then
+    mkdir '/Users/xiaoqiang/Library/Application Support/Adobe/CEP/extensions/IconTemplate'
+fi
+
+cp -r *  '/Users/xiaoqiang/Library/Application Support/Adobe/CEP/extensions/IconTemplate/'
+/Applications/Adobe\ Photoshop\ CC\ 2014/Adobe\ Photoshop\ CC\ 2014.app/Contents/MacOS/Adobe\ Photoshop\ CC\ 2014

@@ -1,0 +1,152 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 nobomb: */
+
+/**
+ * filename.css
+ *
+ * @author xiaoqiang
+ * @mail   qiang0902@126.com
+ * @date
+ */
+
+body {
+    text-align: center;
+}
+
+.main-panel {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.theme-white .icon,
+.theme-gray .icon
+{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 46px;
+    background: url("../img/icontemplate.png") 0 0 no-repeat;
+}
+.theme-dark .icon,
+.theme-black .icon 
+{
+    margin: 0 auto;
+    width: 200px;
+    height: 46px;
+    margin-top: 10px;
+    background: url("../img/icontemplate_dark.png") 0 0 no-repeat;
+}
+
+.tab {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.theme-dark .tab button,
+.theme-black .tab button {
+    text-shadow: 0px -1px 1px #000000;
+}
+
+
+.show-btn,
+.show-btn,
+.export-btn,
+.export-btn
+{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    background: url(../img/create_dark.png?xxxx) 36px 50% no-repeat;
+    background-size: 20px 16px;
+    text-shadow: 0px -1px 1px #eee;
+    color: #333;
+}
+.export-btn,
+.export-btn
+{
+    background: url(../img/export_dark.png?xxxx) 36px 50% no-repeat;
+    background-size: 24px 20px;
+}
+
+.theme-dark .show-btn,
+.theme-black .show-btn
+{
+    text-shadow: 0px -1px 1px #000000;
+        color: #c6c8c8;
+    background: url(../img/create_light.png?xxxx) 36px 50% no-repeat;
+    background-size: 20px 16px;
+}
+.theme-dark .export-btn,
+.theme-black .export-btn {
+    text-shadow: 0px -1px 1px #000000;
+    color: #c6c8c8;
+    background: url(../img/export_light.png?xxxx) 36px 50% no-repeat;
+    background-size: 24px 20px;
+}
+
+.cc {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+.theme-gray .cover,
+.theme-white .cover
+{
+    background: #666;
+}
+
+.tip {
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    margin-left: 10px;
+    background: #222;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px #111;
+}
+
+.corner-switch {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.corner-switch label {
+    text-align: left;
+}
+
+.theme-gray .tip,
+.theme-white .tip
+{
+    background: #bbb;
+    box-shadow: 2px 2px 3px #666;
+}
+
+.tip h3 {
+    font-weight: normal;
+    font-size:  14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.tip p {
+    font-size: 12px;
+    margin: 5px 20px;
+    line-height: 20px;
+}
+.tip div {
+    margin: 10px;
+}

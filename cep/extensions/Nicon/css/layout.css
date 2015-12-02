@@ -1,0 +1,481 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 nobomb: */
+
+/**
+ * filename.css
+ *
+ * @author xiaoqiang
+ * @mail   qiang0902@126.com
+ * @date
+ */
+
+.tab {
+    width: 100%;
+    height: 40px;
+    background: #fafafa;
+}
+.tab ul {
+    list-style: none;
+}
+.tab li {
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+.tab li a {
+    display: block;
+    height: 100%;
+    line-height: 38px;
+    color: #333;
+    text-decoration: none;
+}
+.tab li a:hover {
+    color: #01BCD4;
+}
+.tab li a.active {
+    color: #01BCD4;
+    border-bottom: 2px solid #01BCD4;
+}
+
+
+/** search **/
+.search {
+    margin: 10px;
+}
+.search input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background: #fafafa url(../img/search.png) 10px 50% no-repeat;
+    text-indent: 35px;
+    color: #333;
+}
+
+
+/** items **/
+.items {
+}
+.items li {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.items li>div {
+    display: table-cell;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    background: #fafafa;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.items li div.thumb img {
+    max-height: 60px;
+}
+.items li div.thumb .m {
+    vertical-align: middle;
+    display: table-cell;
+    width: 70px;
+    height: 70px;
+}
+.items li div.thumb .m:hover {
+    background: #ccc;
+}
+.items li div.more {
+    color: #333;
+}
+.items .detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 34px;
+    background: #000 url(../img/eye.png) 50% 50% no-repeat;
+    opacity: 0.5;
+    display: none;
+    cursor: pointer;
+}
+.items .detail:hover {
+    opacity: 0.7;
+}
+.items .download {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 34px;
+    background: #000 url(../img/download.png) 50% 50% no-repeat;
+    opacity: 0.5;
+    display: none;
+    cursor: pointer;
+}
+.items .download:hover {
+    opacity: 0.7;
+}
+
+
+.no-result {
+    margin-top: 20px;
+    text-align: center;
+}
+.no-result .img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: 6px;
+    background: url(../img/sad.png) 0 0 no-repeat;
+}
+
+
+.loading {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 90px;
+    font-size: 12px;
+    text-align: center;
+}
+.loading .img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: 25px;
+    margin-bottom: 6px;
+}
+
+.white .loading .img {
+    background: url(../img/loading_white.gif) 0 0 no-repeat;
+}
+
+/** detail page **/
+#detail-view {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+}
+#detail-view .back {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 10px;
+    width: 20px;
+    height: 17px;
+    background: url("../img/back.png");
+}
+#detail-view .back:hover {
+    background: url("../img/back-hover.png");
+}
+.main-img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #fafafa;
+}
+.main-img span {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+.main-img img {
+    max-height: 60px;
+}
+.detail .info {
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.detail .category {
+    margin-right: 10px;
+}
+
+.detail .operation {
+    margin-bottom: 18px;
+}
+.detail .operation button {
+    width: 80px;
+}
+.detail .operation button:first-child {
+    margin-right: 10px;
+}
+
+#package-items {
+    border-top:  1px solid #bbb;
+    padding-top: 8px;
+}
+#package-items p {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+#package-items p.tip {
+    font-size: 12px;
+    color: #aaa;
+}
+
+#package-items .favorite-package {
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* --- user panel ---- */
+.user-view {
+    font-size:  12px;
+}
+.user-view img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.user-view h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.user-view .buy a {
+    color: #ec514e;
+}
+.user-view p {
+    margin-bottom: 10px;
+}
+.user-view .logout {
+    width: 100%;
+    text-align: center;
+}
+.user-view .logout button {
+    clear: both;
+    width: 150px;
+    height: 26px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999;
+}
+.user-view .logout button:hover {
+    background: #eee;
+}
+
+
+
+/* ---- farovite ------**/
+.favorite-view .tabs {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.favorite-view .tabs li {
+    display: inline-block;
+    font-size: 12px;
+    width: 48%;
+}
+.favorite-view .tabs li a {
+    color: #999;
+    text-decoration: none;
+}
+.favorite-view .tabs li.active a {
+    color: #01BCD4;
+}
+
+.favorite-view .packages li {
+    list-style: none;
+    text-align: left;
+    padding: 4px 0;
+    border-bottom: 1px solid #aaa;
+}
+.favorite-view .packages li a {
+    text-decoration: none;
+}
+.favorite-view .packages li:hover
+{
+    background: #bbbbbb;
+}
+.favorite-view .packages li img {
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.favorite-view .packages li p {
+    margin-left: 50px;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+}
+.favorite-view .packages p.count {
+    font-size: 12px;
+    color: #999;
+}
+
+.favorite-view .packages .more {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.favorite-view .empty {
+    font-size: 12px;
+    color: #999999;
+    display: none;
+    margin-top: 100px;
+}
+
+
+
+/** ---- widget ----- **/
+.cover {
+    background: #000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+}
+button.white {
+    clear: both;
+    width: 150px;
+    height: 26px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999;
+}
+button.white:hover {
+    background: #eee;
+}
+a.color-picker-btn {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    border: 1px solid #979797;
+    vertical-align: -3px;
+}
+.input-small
+{
+    width: 80px;
+    height: 22px;
+    border: 1px solid #979797;
+    border-radius: 3px;
+    text-indent: 8px;
+    box-shadow: 1px 1px 1px #bbb inset;
+}
+input.checkbox
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    -webkit-appearance: none;
+    -webkit-mask-repeat: round;
+    -webkit-mask-size: 12px;
+    -webkit-mask-position: right;
+    vertical-align: -3px;
+}
+input.checked,
+input.checked
+{
+    background: url(../img/checked.png) 0 0 no-repeat;
+}
+input.uncheck,
+input.uncheck
+{
+    background: url(../img/unchecked.png) 0 0 no-repeat;
+}
+
+.selector {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.selector .text {
+    margin-left: 6px;
+    font-size: 12px;
+}
+.selector .arr {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../img/arrow-black.png) 50% 50% no-repeat;
+}
+.toast {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}
+.toast span {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.dialog {
+    position: absolute;
+    top: 70px;
+    width: 230px;
+    margin-left: 10px;
+    border-radius: 6px;
+    z-index: 20;
+}
+
+.corner-switch {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.corner-switch label {
+    text-align: left;
+}
+body.black .dialog,
+body.dark .dialog {
+    background: #444;
+    box-shadow: 2px 2px 3px #333;
+    color: #D8D8D8;
+}
+
+body.gray .dialog,
+body.white .dialog
+{
+    background: #bbb;
+    box-shadow: 2px 2px 3px #666;
+}
+
+.dialog h3 {
+    font-weight: normal;
+    font-size:  14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.dialog p {
+    font-size: 12px;
+    margin: 5px 20px;
+    line-height: 20px;
+}
+.dialog div {
+    margin: 10px;
+}
+
+/**------ widget end ----------------*/
+
+
