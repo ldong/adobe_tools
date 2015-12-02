@@ -1,0 +1,628 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 nobomb: */
+
+/**
+ * filename.css
+ *
+ * @author xiaoqiang
+ * @mail   qiang0902@126.com
+ * @date
+ */
+
+.main-panel {
+    position: relative;
+}
+
+.tab {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+}
+.tab ul {
+    list-style: none;
+}
+.tab li {
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+.tab li a {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    text-decoration: none;
+}
+.tab li a.android {
+    background: url(../img/Android.png?ww) 50% 50% no-repeat;
+}
+.tab li.active a.android {
+    background: url(../img/Android_highlight.png?yy) 50% 50% no-repeat;
+}
+.tab li a.ios {
+    background: url(../img/ios.png?xx) 50% 50% no-repeat;
+}
+.tab li.active a.ios {
+    background: url(../img/ios_highlight.png?xx) 50% 50% no-repeat;
+}
+.tab li a.web {
+    background: url(../img/web.png?mm) 50% 50% no-repeat;
+}
+.tab li.active a.web {
+    background: url(../img/web_highlight.png?mm) 50% 50% no-repeat;
+}
+.tab li.active a {
+    border-bottom: 2px solid #D0021B;
+}
+
+/* --- common --- */
+.export-btn {
+    margin: 10px;
+    margin-top: 16px;
+}
+.export-btn button {
+    background: #E2E2E2;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.export-btn button:hover {
+    background: #ccc;
+    border: 1px solid #999;
+}
+.export-btn button span {
+    background: url("../img/export-icon.png") 0px 40% no-repeat;
+    text-indent: 24px;
+    display: inline-block;
+}
+
+.merge-layer {
+    margin: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    overflow: hidden;
+    height: 24px;
+    line-height: 22px;
+}
+.m10 {
+    margin: 10px;
+}
+.fix-size {
+    font-size: 12px;
+    overflow: hidden;
+    color: #333;
+    line-height: 24px;
+}
+.fix-size .dimension {
+    float: right;
+}
+.fix-size input {
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    text-align: center;
+    background: #D8D8D8;
+    outline: none;
+}
+.fix-size .dimension span {
+    margin: 0 6px;
+    color: #a2a2a2;
+}
+.export-location {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+.export-location .cc {
+    background: #bbb;
+    width: 70%;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-align: left;
+    color: #666;
+    display: inline-block;
+}
+.export-location .location-btn {
+    display: inline-block;
+    padding: 3px;
+    color: #fff;
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    text-indent: 4px;
+    text-decoration: none;
+}
+.export-location .open-dir {
+    float: right;
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    background: url("../img/right-arr.png?xxyy") 0 0 no-repeat;
+    background-size: 10px 14px;
+    margin-right: 4px;
+    margin-top:2px;
+}
+.export-location .user {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 2px;
+    background: url("../img/user.png") 50% 50% no-repeat;
+    float: right;
+}
+.export-location .user:hover {
+    background: url("../img/user-hover.png") 50% 50% no-repeat;
+}
+.export-location .setting {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    margin-right: 10px;
+    background: url("../img/setting.png") 50% 50% no-repeat;
+    float: right;
+}
+.export-location .setting:hover {
+    background: url("../img/setting-hover.png") 50% 50% no-repeat;
+}
+
+/** android view --- */
+.android-view {
+    display: block;
+}
+.android-export-dpi {
+    position: relative;
+    font-size: 12px;
+}
+.android-export-dpi ul {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.android-export-dpi ul li {
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.android-export-dpi ul li span {
+    display: inline-block;
+    background: #4A4A4A;
+    border-radius: 3px;
+    padding: 4px;
+    padding-left: 6px;
+    color: #fff;
+}
+.android-export-dpi ul li span a {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
+    float: right;
+    background: url("../img/delete.png?xx") 50% 50% no-repeat;
+}
+.android-export-dpi ul li span a:hover {
+    background: url("../img/delete-hover.png") 0 0 no-repeat;
+}
+
+.android-export-dpi ul li a.add {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    background: url("../img/add.png") 50% 50% no-repeat;
+}
+.android-export-dpi ul li a.add:hover {
+    background: url("../img/add-hover.png") 50% 50% no-repeat;
+}
+.android-export-dpi ol {
+    position: absolute;
+    display: none;
+    top: -30px;
+    left: 125px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #a2a2a2;
+    background: #E2E2E2;
+}
+.android-export-dpi ol li {
+    margin: 0;
+}
+.android-export-dpi ol li a {
+    color: #333;
+    display: block;
+    text-decoration: none;
+    padding: 6px;
+}
+.android-export-dpi ol li a:hover {
+    background: #999;
+    color: #fff;
+}
+
+
+/** -- ios view --*/
+.ios-view {
+    display: none;
+}
+.ios-export-dpi {
+    font-size: 12px;
+}
+.ios-export-dpi ul {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.ios-export-dpi li {
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.ios-export-dpi li a {
+    display: inline-block;
+    background: #a2a2a2;
+    border-radius: 3px;
+    color: #4A4A4A;
+    padding: 4px 15px;
+    text-decoration: none;
+}
+.ios-export-dpi li a.active {
+    background: #4A4A4A;
+    color: #fff;
+}
+
+
+/* --- android setting ---- */
+.android-setting {
+    position: absolute;
+    font-size:  12px;
+    top: 40px;
+    background: #D8D8D8;
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    display: none;
+}
+.android-setting .header {
+    margin: 10px;
+    overflow: hidden;
+}
+.android-setting .header a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/back.png") 50% 50% no-repeat;
+    margin-right: 10px;
+    float: left;
+}
+.android-setting .header a:hover {
+    background-image: url("../img/back-hover.png");
+}
+.android-setting .header span {
+    float: left;
+}
+
+.android-setting > div {
+    margin: 12px 10px;
+    line-height: 20px;
+}
+.android-setting .format-list,
+.android-setting .quality input,
+.android-setting .options,
+.android-setting .custom-dpi-list
+{
+    position: absolute;
+    right: 10px;
+}
+
+.customize-dpi-list li {
+    width: 110px;
+    float: left;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.ios-setting li {
+    text-align: left;
+}
+.customize-dpi-list li input {
+    width: 40px;
+    margin-left: 6px;
+}
+.ios-setting li input {
+    width: 60px;
+}
+
+
+/* --- user panel ---- */
+.user-view {
+    font-size:  12px;
+}
+.user-view img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.user-view h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.user-view .buy a {
+    color: #ec514e;
+}
+.user-view p {
+    margin-bottom: 10px;
+}
+.user-view .logout {
+    width: 100%;
+    text-align: center;
+}
+.user-view .logout button {
+    clear: both;
+    width: 150px;
+    height: 26px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999;
+}
+.user-view .logout button:hover {
+    background: #eee;
+}
+
+
+
+/** -- widget ----*/
+.switcher-off,
+.switcher-on
+{
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    position: relative;
+    float: right;
+}
+.switcher-off .line,
+.switcher-on .line
+{
+    display: inline-block;
+    height: 2px;
+    background: #666;
+    width: 100%;
+    top: 9px;
+    position: absolute;
+}
+.switcher-off .oval,
+.switcher-on .oval
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border: 2px solid #666;
+    background: #D8D8D8;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+.switcher-on .line {
+    background: #D0021B;
+}
+.switcher-on .oval {
+    border-color: #D0021B;
+    background: #D0021B;
+    left: inherit;
+    right: 0;
+}
+
+hr {
+    margin: 10px;
+    clear: both;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+}
+.cover {
+    background: #000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+}
+button.white {
+    clear: both;
+    width: 150px;
+    height: 26px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999;
+}
+button.white:hover {
+    background: #eee;
+}
+a.color-picker-btn {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    border: 1px solid #979797;
+    vertical-align: -3px;
+}
+.input-small
+{
+    width: 80px;
+    height: 20px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    text-indent: 8px;
+}
+input.checkbox
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    -webkit-appearance: none;
+    -webkit-mask-repeat: round;
+    -webkit-mask-size: 12px;
+    -webkit-mask-position: right;
+    vertical-align: -3px;
+}
+input.checked,
+input.checked
+{
+    background: url(../img/checked.png) 0 0 no-repeat;
+}
+input.uncheck,
+input.uncheck
+{
+    background: url(../img/unchecked.png) 0 0 no-repeat;
+}
+
+div.options {
+    display: inline-block;
+}
+div.options a {
+    display: inline-block;
+    background: #b2b2b2;
+    border-radius: 3px;
+    color: #666;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+div.options a.active {
+    background: #4A4A4A;
+    color: #fff;
+}
+
+
+.selector {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+}
+.selector .text {
+    margin-left: 6px;
+    font-size: 12px;
+}
+.selector .arr {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../img/arrow-black.png?xx") 50% 50% no-repeat;
+}
+.selector ul {
+    position: absolute;
+    left: -1px;
+    display: none;
+    background: #fff;
+    border: 1px solid #aaa;
+    width: 80px;
+    z-index: 30;
+}
+.selector li a {
+    display: block;
+    text-decoration: none;
+    color: #444444;
+    padding: 4px 6px;
+}
+.selector li a:hover {
+    background: #999;
+    color: #eee;
+}
+.toast {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}
+.toast span {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.dialog {
+    position: absolute;
+    top: 70px;
+    width: 230px;
+    margin-left: 10px;
+    border-radius: 6px;
+    z-index: 20;
+}
+
+.corner-switch {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.corner-switch label {
+    text-align: left;
+}
+body.black .dialog,
+body.dark .dialog {
+    background: #444;
+    box-shadow: 2px 2px 3px #333;
+    color: #D8D8D8;
+}
+
+body.gray .dialog,
+body.white .dialog
+{
+    background: #bbb;
+    box-shadow: 2px 2px 3px #666;
+}
+
+.dialog h3 {
+    font-weight: normal;
+    font-size:  14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.dialog p {
+    font-size: 12px;
+    margin: 5px 20px;
+    line-height: 20px;
+}
+.dialog div {
+    margin: 10px;
+}
+
+/**------ widget end ----------------*/
+
+

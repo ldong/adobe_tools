@@ -1,0 +1,64 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: j80IK90Un6alOXxP2Bv0qgv7HGl88
+ lnvL3PxMWhbcbw=
+SHA-256-Digest-Manifest: MFk50luX95Ar0m58V8o85wZnxdMhM6yFT5HkKuzk6RI=
+Created-By: 1.7.0_13 (Oracle Corporation)
+
+Name: plugins/com.adobe.cside.html.codegeneration_1.0.0.201307260955.j
+ ar
+SHA-256-Digest: BREn8rBy4nPOxfLAOghiRLpxAAAJF9zxfaw8gAF+0Ic=
+
+Name: plugins/com.adobe.cside.html.libupdater_1.0.0.201307260955.jar
+SHA-256-Digest: tMZO3TfISZ2/SZmgPPqg/hlrqcm3EpY5PqVyqUNyFZY=
+
+Name: plugins/com.adobe.cside.html.headlights_1.0.0.201307260955.jar
+SHA-256-Digest: wuuSYA6Ev+XSUwhAs5MgtaNKVPYxto0wdqE3LeC91hg=
+
+Name: plugins/com.adobe.cside.html.importer.samples_1.0.0.201307260955
+ .jar
+SHA-256-Digest: HEGOE3QEZOCJeWYG7K+T2c+wvJAxpWdWNvAQmCBhEHo=
+
+Name: plugins/com.adobe.cside.html.libsinstaller_1.0.0.201307260955.ja
+ r
+SHA-256-Digest: F/+djFx/2GjZVRt9AcDQGCAvIlEedQTNvG9wG28A+dY=
+
+Name: plugins/com.adobe.cside.html.docs_1.0.0.201307260955.jar
+SHA-256-Digest: 8pCT7DwK7+VPlPZCe7xDCsVNusNZtdlxBqdY/0Y7PxA=
+
+Name: features/com.adobe.cside.html.docs.feature_1.0.0.201307260955.ja
+ r
+SHA-256-Digest: GG9atBajX03XVvMrCj6KLT3br6iGB/+qRRd+yUSaTDc=
+
+Name: plugins/com.adobe.cside.html.exportwizard_1.0.0.201307260955.jar
+SHA-256-Digest: 87V1aVvngy0hiKrlAd+wt8+VvsRMixU4kpUKFTRA+wA=
+
+Name: web/site.css
+SHA-256-Digest: K1ayvhtoXKOn+dVP0ZIG9WFtCvBgSh95OmM/+D6PyCI=
+
+Name: plugins/com.adobe.cside.html.ui_1.0.0.201307260955.jar
+SHA-256-Digest: yNv6/MJ1MnS6sCv5zl2SW6++jjBpqd2NNWpoKsAbHN4=
+
+Name: index.html
+SHA-256-Digest: Hl6OvvsguaQSipf6jLX9/fHP9QQnEuErH8bNieqtRlA=
+
+Name: plugins/com.adobe.cside.html.launching_1.0.0.201307260955.jar
+SHA-256-Digest: GLQETjqoAVwyh/7hdUEtq/pjwjlku9eolufLyG6Q8lE=
+
+Name: site.xml
+SHA-256-Digest: Qrtv9bNXhYDxdZUDobuE4rZfHwzd9AIzvyG8c6WQzSA=
+
+Name: plugins/com.adobe.cside.html.project_1.0.0.201307260955.jar
+SHA-256-Digest: 78Wn1monH9cSrK7Wnd7msCcZ/JDYRloXXFF4qKk4JxQ=
+
+Name: web/site.xsl
+SHA-256-Digest: mFdU5x+4/CI1FQH1W/jjyTsODvppSkNmUiA5HdSsGYk=
+
+Name: features/com.adobe.cside.html.feature_1.0.0.201307260955.jar
+SHA-256-Digest: wkLJRfH8ycF1Kz7NtQ9KkuKBNMdDG1H0soCpdoy6d1k=
+
+Name: plugins/com.adobe.cside.html.newwizard_1.0.0.201307260955.jar
+SHA-256-Digest: pEUFPpduVSesYPgAtjwwnra5XbQ7mo2nPvb08NQTtvA=
+
+Name: plugins/com.adobe.cside.html.core_1.0.0.201307260955.jar
+SHA-256-Digest: WsUmkShxQWpIHHhnkl9OTojh5Q4cdmEbLUvjpfx7XwA=
+

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title> Parker </title>
+        <link rel="stylesheet" href="./css/base.css"/>
+        <link rel="stylesheet" href="./css/layout.css?xx"/>
+    </head>
+
+    <body class="white">
+    <div class="wrapper">
+
+        <div class="login-panel" id="login-panel" style="display: none;">
+            <img width="80" height="80" src="./img/avatar.png" alt="" style="margin-top: 15px"/>
+            <p>您必须登录才能使用</p>
+            <form id="login-form" action="/" method="get" accept-charset="utf-8">
+                <div><input type="text" name="email" class="input-small" placeholder="邮箱"/></div>
+                <div><input type="password" name="password" class="input-small" placeholder="密码"/></div>
+                <div class="login"><button type="submit" class="white">登  录</button></div>
+            </form>
+            <a id="register-btn" class="link" href="#">没有帐号，去注册</a>
+            <a id="auth-btn" class="link" href="#">我有授权码</a>
+        </div>
+
+        <div class="auth-panel" id="auth-panel" style="display: none;">
+            <img width="80" height="80" src="./img/avatar.png" alt="" style="margin-top:  30px"/>
+            <p>请输入授权码</p>
+            <div><input type="text" id="authcode" name="authcode" class="input-small" placeholder="授权码"/></div>
+            <div class="login"><button id="submitcode" type="submit" class="white">提 交</button></div>
+            <a id="go-register-btn" class="link" href="#">返回登录</a>
+        </div>
+
+        <div class="user-panel" id="user-panel" style="display: none">
+            <img src="./img/avatar.png" alt=""/>
+            <h3 id="account">account@demo.com</h3>
+            <p id="licence">试用阶段</p>
+            <p class="buy"><a id="buy" clas="link" href="#">购买(60rmb)</a> </p>
+            <p id="current-version">当前版本：2.0.0</p>
+
+            <div class="logout"><button id="logout-btn">退出登录</button></div>
+        </div>
+
+        <div class="setting-panel" id="setting-panel" style="display: none;">
+            <dl>
+                <dt>标注样式</dt>
+                <dd>
+                    <div><label>字号</label><input type="text" class="input-small" name="draw-size" id="draw-size" value="12"/></div>
+                    <div><label>颜色</label><a href="#" id="forecolor" data-color="ff0000" style="background: #ff0000;" class="color-picker-btn"></a> </div>
+                    <div><label>显示背景</label><input class="checkbox uncheck" type="checkbox" name="draw-color" id="draw-color"/> </div>
+                    <div id="bgcolor" style="display: none;"><label>背景颜色</label><a href="#" id="backcolor" data-color="00c4ff" style="background: #00c4ff" class="color-picker-btn"></a> </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>标注单位</dt>
+                <dd>
+                    <div><label>分辨率</label><span data-key="dpi" class="selector"><span class="text">XHDPI</span><span class="arr"></span></span></div>
+                    <div><label>尺寸单位</label><span data-key="unit" class="selector"><span class="text">PX</span><span class="arr"></span></span></div>
+                    <div><label>颜色格式</label><span data-key="colorType" class="selector"><span class="text">HEX&RGB</span><span class="arr"></span></span> </div>
+                </dd>
+            </dl>
+            <div class="options" id="options" style="diplay:none"> </div>
+
+        </div>
+
+        <div style="display: none;" class="cover" id="big-cover"></div>
+        <div class="color-picker" id="color-picker" style="display: none">
+            <h3>颜色管理<a href="#" class="close">关闭</a></h3>
+            <ul>
+                <!--<li><a style="background: #ff0000" href="#">#ff0000</a> <a href="#" class="delete"></a> </li>-->
+                <!--<li><a style="background: #ff9e00" href="#">#ff9e00</a> <a href="#" class="delete"></a> </li>-->
+                <!--<li><a style="background: #7eff00" href="#">#7eff00</a> <a href="#" class="delete"></a> </li>-->
+                <!--<li><a style="background: #00c4ff" href="#">#00c4ff</a> <a href="#" class="delete"></a> </li>-->
+                <!--<li><a style="background: #cf00ff" href="#">#cf00ff</a> <a href="#" class="delete"></a> </li>-->
+            </ul>
+            <div class="add"><input type="text" class="input-small" placeholder="#xxxxxx"/> <button class="white"> 添加</button></div>
+            <div style="display: none" class="max">最多添加5个颜色，<br/>你可以删除一个来进行添加</div>
+        </div>
+
+
+        <div class="main-panel" id="main-panel" style="display: ;">
+            <div class="header">
+                <a href="#" id="user-icon" class="user"></a>
+                <span><img src="./img/logo.png" /> </span>
+                <a href="#" id="setting-icon" class="setting"></a>
+            </div>
+
+            <div class="buttons" id="buttons">
+                <ul>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="position-action" class="btn-action position-top-left"></a>
+                            <a href="#" data-target="position-layer" class="btn-option"></a>
+                        </div>
+                        <p>边角坐标</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="dimension-action" class="btn-action dimension-width-height"></a>
+                            <a href="#" data-target="dimension-layer" class="btn-option"></a>
+                        </div>
+                        <p>元素尺寸</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="edge-action" class="btn-action edge-left"></a>
+                            <a href="#" data-target="edge-layer" class="btn-option"></a>
+                        </div>
+                        <p>边缘距离</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="distance-action" class="btn-action distance-horizontal"></a>
+                            <a href="#" data-target="distance-layer" class="btn-option"></a>
+                        </div>
+                        <p>相互距离</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="description-action" class="btn-action btn-description"></a>
+                            <a href="#" data-target="description-layer" class="btn-option"></a>
+                        </div>
+                        <p>添加说明</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="font-action" class="btn-action btn-font"></a>
+                            <a href="#" data-target="font-layer" class="btn-option"></a>
+                        </div>
+                        <p>文字信息</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="color-action" class="btn-action btn-color"></a>
+                            <a href="#" data-target="color-layer" class="btn-option"></a>
+                        </div>
+                        <p>图层颜色</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="padding-action" class="btn-action btn-padding"></a>
+                            <a href="#" data-target="padding-layer" class="btn-option"></a>
+                        </div>
+                        <p>内部边距</p>
+                    </li>
+                    <li>
+                        <div class="button">
+                            <a href="#" id="rect-action" class="btn-action btn-rectangle"></a>
+                            <a href="#" data-target="rect-layer" class="btn-option"></a>
+                        </div>
+                        <p>矩形遮罩</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="display: none;" class="cover" id="cover"></div>
+            <div class="layers" id="layers" style="display: none;top: -90px">
+                <div class="position-layer" id="position-layer" style="display: none;">
+                    <ul data-select="single" data-action="position">
+                        <li><a href="#" data-index="0" class="btn-action position-top-left"></a></li>
+                        <li><a href="#" data-index="1" class="btn-action position-top-right"></a></li>
+                        <li><a href="#" data-index="2" class="btn-action position-bottom-right"></a></li>
+                        <li><a href="#" data-index="3" class="btn-action position-bottom-left"></a></li>
+                    </ul>
+                    <div class="confirm"><button data-target="position-layer" data-action="position-action">关闭</button></div>
+                </div>
+                <div class="dimension-layer" id="dimension-layer" style="display: none;">
+                    <ul data-select="single" data-action="dimension">
+                        <li><a href="#" data-index="0" class="btn-action dimension-width-height"></a></li>
+                        <li><a href="#" data-index="1" class="btn-action dimension-width"></a></li>
+                        <li><a href="#" data-index="2" class="btn-action dimension-height"></a></li>
+                        <li><a href="#" data-index="3" class="btn-action dimension-middle-vertical"></a></li>
+                    </ul>
+                    <div class="confirm"><button data-target="dimension-layer" data-action="dimension-action">关闭</button></div>
+                </div>
+                <div class="edge-layer" id="edge-layer" style="display: none;">
+                    <ul data-select="single" data-action="edge">
+                        <li><a href="#" data-index="0" class="btn-action edge-left"></a></li>
+                        <li><a href="#" data-index="1" class="btn-action edge-right"></a></li>
+                        <li><a href="#" data-index="2" class="btn-action edge-bottom"></a></li>
+                        <li><a href="#" data-index="3" class="btn-action edge-top"></a></li>
+                    </ul>
+                    <div class="confirm"><button data-target="edge-layer" data-action="edge-action">关闭</button></div>
+                </div>
+                <div class="distance-layer" id="distance-layer" style="display: none;">
+                    <ul data-select="single" data-action="distance">
+                        <li><a href="#" data-index="0" class="btn-action distance-horizontal"></a></li>
+                        <li><a href="#" data-index="1" class="btn-action distance-vertical"></a></li>
+                    </ul>
+                    <div class="confirm"><button data-target="distance-layer" data-action="distance-action">关闭</button></div>
+                </div>
+                <div class="description-layer" id="description-layer" style="display: none;">
+                    <div class="edit"><textarea placeholder="在这里输入描述文字" name="description" id="description-text" cols="30" rows="10"></textarea></div>
+                    <div class="confirm"><button data-target="description-layer">插入</button><button data-target="description-layer" data-type="cancel">取消</button></div>
+                </div>
+                <div class="font-layer" id="font-layer" style="display: none;">
+                    <ul>
+                        <li><input class="checkbox checked" type="checkbox" name="family" id="font-family"/><label for="font-family">字体</label></li>
+                        <li><input class="checkbox checked" type="checkbox" name="size" id="font-size"/><label for="font-size">字号</label></li>
+                        <li><input class="checkbox checked" type="checkbox" name="color" id="font-color"/><label for="font-color">颜色</label></li>
+                        <li><input class="checkbox uncheck" type="checkbox" name="height" id="line-height"/><label for="line-height">行高</label></li>
+                        <li><input class="checkbox uncheck" type="checkbox" name="shadow" id="shadow"/><label for="shadow">投影</label></li>
+                        <li><input class="checkbox uncheck" type="checkbox" name="stroke" id="stroke"/><label for="stroke">描边</label></li>
+                    </ul>
+                    <div class="direction">
+                        <span class="text">被标注文本</span>
+                        <a class="right"></a>
+                        <a class="bottom bottom-select"></a>
+                    </div>
+                    <div class="confirm"><button data-target="font-layer">确定</button></div>
+                </div>
+                <div class="color-layer" id="color-layer" style="display: none;">
+                    <ul>
+                        <li><input class="checkbox checked" type="checkbox" name="color" id="mark-color"/><label for="mark-color">颜色</label></li>
+                        <li><input class="checkbox uncheck" type="checkbox" name="opacity" id="mark-opacity"/><label for="mark-opacity">透明度</label></li>
+                        <li><input class="checkbox uncheck" type="checkbox" name="shadow" id="mark-shadow"/><label for="mark-shadow">投影</label></li>
+                        <li><input class="checkbox uncheck" type="checkbox" name="stroke" id="mark-stroke"/><label for="mark-stroke">描边</label></li>
+                        <li><input class="checkbox uncheck" type="checkbox" name="radius" id="mark-radius"/><label for="mark-radius">圆角</label></li>
+                        <li></li>
+                    </ul>
+                    <div class="confirm"><button data-target="color-layer">确定</button></div>
+                </div>
+                <div class="padding-layer" id="padding-layer" style="display: none;">
+                    <ul data-select="multiple">
+                        <li><a href="#" data-index="0" class="btn-action selected padding-left"></a></li>
+                        <li><a href="#" data-index="1" class="btn-action selected padding-right"></a></li>
+                        <li><a href="#" data-index="2" class="btn-action selected padding-bottom"></a></li>
+                        <li><a href="#" data-index="3" class="btn-action selected padding-top"></a></li>
+                    </ul>
+                    <div class="confirm"><button data-target="padding-layer">确定</button></div>
+                </div>
+                <div class="rect-layer" id="rect-layer" style="display: none;">
+                    <div><input type="text" name="width" class="input-small" id="rect-width" placeholder="宽"/><input class="input-small" type="text" name="height" id="rect-height" placeholder="高"/></div>
+                    <div><label>颜色</label><a href="#" id="rect-color" data-color="ff0000" style="background: #ff0000" class="color-picker-btn"></a> <label>透明度</label><input type="text" name="rect-opacity" class="input-small" id="rect-opacity" value="30%"/></div>
+                    <div class="confirm"><button data-target="rect-layer">确定</button></div>
+                </div>
+
+            </div>
+
+            <div class="export-btn"><button id="export-btn">导出</button></div>
+
+        </div>
+        <textarea name="jsx" id="jsx" style="display:none" rows="4" cols="10"></textarea>
+
+
+        <div style="display: none;" class="toast" id="toast"><span>这里是一些提示文字</span></div>
+
+        <div id="dialog" class="dialog" style="display: none">
+            <h3>提示</h3>
+            <p>这里是一段提示文字这里这里是一段提示文字这里</p>
+            <div><button class="white">确定</button> </div>
+        </div>
+
+
+        <script src="./lib/CSInterface-4.0.0.js" type="text/javascript"></script>
+        <script src="./js/jquery.js" type="text/javascript"></script>
+        <script src="./js/base.js" type="text/javascript"></script>
+        <script src="./js/config.js" type="text/javascript"></script>
+        <script src="./js/cookie.js" type="text/javascript"></script>
+        <script src="./js/login.js" type="text/javascript"></script>
+        <script>
+            var instance = new App('parker');
+                instance.init();
+            var config = new Config(instance);
+            var cookie = new Cookie(instance);
+            var user = new User(instance, config);
+                user.init();
+        </script>
+        <script src="./js/parker.js" type="text/javascript"></script>
+
+    </div>
+    </body>
+</html>
+

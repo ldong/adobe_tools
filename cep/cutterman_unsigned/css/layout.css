@@ -1,0 +1,61 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 nobomb: */
+
+/**
+ * filename.css
+ *
+ * @author xiaoqiang
+ * @mail   qiang0902@126.com
+ * @date
+ */
+
+.main-panel {
+    position: relative;
+}
+
+
+
+/* --- user panel ---- */
+.user-view {
+    font-size:  12px;
+}
+.user-view img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.user-view h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.user-view .buy a {
+    color: #ec514e;
+}
+.user-view p {
+    margin-bottom: 10px;
+}
+.user-view .logout {
+    width: 100%;
+    text-align: center;
+}
+.user-view .logout button {
+    clear: both;
+    width: 150px;
+    height: 26px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999;
+}
+.user-view .logout button:hover {
+    background: #eee;
+}
+
+
+/** -- widget ----*/
+
+
+/**------ widget end ----------------*/
+
+

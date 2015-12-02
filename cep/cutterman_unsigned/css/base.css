@@ -1,0 +1,148 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 nobomb: */
+
+/**
+ * filename.css
+ *
+ * @author xiaoqiang
+ * @mail   qiang0902@126.com
+ * @date
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MicrosoftYaHei', Verdana;
+    font-size: 14px;
+    color: #333;
+}
+html, body, .wrapper, .main-panel {
+    height: 100%;
+}
+ul, li, p, h1, h2, h3, h4, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+input, button, textarea {
+    font-family: 'MicrosoftYaHei', Verdana;
+}
+
+
+/** -------- theme white -----------**/
+body.white,
+body.white .main-panel,
+body.white .user-panel,
+body.white .setting-panel
+{
+    background: #D8D8D8;
+}
+body.gray,
+body.gray .main-panel,
+body.gray .user-panel,
+body.gray .setting-panel
+{
+    background: #cdcdcd;
+}
+body.dark,
+body.dark .main-panel,
+body.dark .user-panel,
+body.dark .setting-panel
+{
+    background: #383838;
+    color: #818485;
+}
+body.black,
+body.black .main-panel,
+body.black .user-panel,
+body.black .setting-panel
+{
+    background: #343434;
+    color: #eee;
+}
+
+
+
+body.black a.link,
+body.dark a.link,
+body.black button.link,
+body.dark button.link
+{
+    color: #ec514e;
+}
+
+
+/** ---------  common module ----------**/
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-panel {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+}
+
+body.gray .main-panel-left {
+    box-shadow: -3px 0 3px #aaa;
+}
+
+body.dark .main-panel-left {
+    box-shadow: -3px 0 3px #222;
+}
+
+body.gray .main-panel-right {
+    box-shadow: 3px 0 3px #aaa;
+}
+body.dark .main-panel-right {
+    box-shadow: 3px 0 3px #222;
+}
+
+
+.login-panel img,
+.auth-panel img
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.login-panel p,
+.auth-panel p
+{
+    font-size: 12px;
+    color: #444;
+}
+body.dark .login-panel p,
+body.black .login-panel p,
+body.dark .auth-panel p,
+body.black .auth-panel p
+{
+    color: #ccc;
+}
+
+.login-panel .input-small,
+.auth-panel .input-small
+{
+    width: 180px;
+    margin-top: 10px;
+}
+.login-panel .login,
+.auth-panel .login
+{
+    margin-top: 10px;
+}
+.login-panel .login button {
+    width: 184px;
+    margin: 0 20px;
+}
+.login-panel a,
+.auth-panel a
+{
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #d56d3d;
+}

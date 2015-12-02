@@ -1,0 +1,179 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 nobomb: */
+
+/**
+ * filename.css
+ *
+ * @author xiaoqiang
+ * @mail   qiang0902@126.com
+ * @date
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MicrosoftYaHei', Verdana;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+ul, li, p, h1, h2, h3, h4, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+input, button, textarea {
+    font-family: 'MicrosoftYaHei', Verdana;
+}
+
+
+/** -------- theme white -----------**/
+body.white,
+body.white .main-panel,
+body.white .user-panel,
+body.white .setting-panel
+{
+    background: #D8D8D8;
+}
+body.gray,
+body.gray .main-panel,
+body.gray .user-panel,
+body.gray .setting-panel
+{
+    background: #b8b8b8;
+}
+body.dark,
+body.dark .main-panel,
+body.dark .user-panel,
+body.dark .setting-panel
+{
+    background: #535353;
+}
+body.black,
+body.black .main-panel,
+body.black .user-panel,
+body.black .setting-panel
+{
+    background: #343434;
+}
+
+
+body.black a.link,
+body.dark a.link
+{
+    color: #ec514e;
+}
+
+
+/** ---------  common module ----------**/
+.wrapper {
+    width: 250px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.main-panel {
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+.main-panel-left {
+    box-shadow: -3px 2px 3px #999;
+}
+.main-panel-right {
+    box-shadow: 3px 2px 3px #999;
+}
+
+body.dark .main-panel-left,
+body.black .main-panel-left
+{
+    box-shadow: -3px 2px 3px #333;
+}
+body.dark .main-panel-right,
+body.black .main-panel-right
+{
+    box-shadow: 3px 2px 3px #333;
+}
+
+.header {
+    height: 40px;
+    line-height: 40px;
+    background: #03A9F4;
+    position: relative;
+    z-index: 10;
+    box-shadow:  0 2px 4px #666;
+}
+body.dark .header,
+body.black .header
+{
+    box-shadow: 0 2px 2px #333;
+}
+
+.header .user {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/user.png) 50% 50% no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.header .user:hover {
+    background: url(../img/user-hover.png) 50% 50% no-repeat;
+}
+
+.header .setting {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/setting.png) 50% 50% no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.header .setting:hover {
+    background: url(../img/setting-hover.png) 50% 50% no-repeat;
+}
+
+.login-panel img,
+.auth-panel img,
+{
+    margin-top: 20px;
+}
+.login-panel p,
+.auth-panel p
+{
+    font-size: 12px;
+    color: #444;
+}
+body.dark .login-panel p,
+body.black .login-panel p,
+body.dark .auth-panel p,
+body.black .auth-panel p
+{
+    color: #ccc;
+}
+
+.login-panel .input-small,
+.auth-panel .input-small
+{
+    width: 150px;
+    margin-top: 10px;
+}
+.login-panel .login,
+.auth-panel .login
+{
+    margin-top: 10px;
+}
+.login-panel a,
+.auth-panel a
+{
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: blue;
+}

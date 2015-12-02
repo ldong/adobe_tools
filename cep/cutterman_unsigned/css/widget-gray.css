@@ -1,0 +1,179 @@
+/**
+ * widget.css
+ */
+
+.m10 {
+    margin-top: 10px;
+}
+
+button {
+    border-radius: 3px;
+    border: 1px solid #a0a0a0;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e2e2e2), to(#d8d8d8));
+    height: 32px;
+    font-size: 14px;
+    color: #4e4a4a;
+    text-shadow: 0px 1px 1px #FFFFFF;
+    cursor: pointer;
+}
+button:hover {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#e2e2e2));
+}
+button.active {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#e6e6e6));
+    box-shadow: 0 2px 1px 0 #cdcdcd inset;
+    color: #d56d3d;
+}
+
+
+input[type=text],
+input[type=password] ,
+div.selector {
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#e6e6e6));
+    box-shadow: 0 2px 1px 0 #cdcdcd inset;
+    color: #d56d3d;
+    font-size: 14px;
+    outline: none;
+    height: 24px;
+    text-align: center;
+}
+
+
+a.checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    background: #e6e6e6;
+}
+a.checked {
+    background-image: url("../img/checkbox-checked.png?ff");
+    background-size: 100% 100%;
+}
+
+
+div.hr {
+    width: 100%;
+    height: 1px;
+    background: #aaaaaa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+div.option-tab {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #a0a0a0;
+    height: 25px;
+}
+div.option-tab button {
+    margin: 0;
+    height: 25px;
+    border: none;
+    float: left;
+    font-size: 12px;
+    padding: 0 10px;
+    border-left:  1px solid #a0a0a0;
+}
+div.option-tab button:first-child {
+    border: none;
+}
+
+
+
+div.selector {
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.selector .text {
+    margin-left: 6px;
+    font-size: 12px;
+}
+.selector .arr {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../img/gray/arr-down.png?bbee) 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+.selector ul {
+    display: none;
+    position: absolute;
+    background: #e2e2e2;
+    width: 99%;
+    border: 1px solid #a2a2a2;
+    margin-top: -4px;
+}
+.selector li a {
+    font-size: 12px;
+    color: #444444;
+    text-decoration: none;
+    display: block;
+    line-height: 24px;
+}
+.selector li a:hover {
+    color: #d56d3d;
+    background: #f1f1f1;
+}
+
+.dialog {
+    position: absolute;
+    top: 70px;
+    width: 210px;
+    margin-left: 10px;
+    border-radius: 6px;
+    z-index: 20;
+    background: #bbb;
+    box-shadow: 2px 2px 3px #666;
+}
+.dialog h3 {
+    font-size: 14px;
+    line-height: 28px;
+    color: #383838;
+}
+.dialog p {
+    line-height: 24px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.dialog button {
+    width: 100px;
+    margin-bottom: 8px;
+}
+.cover {
+    background: #000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+}
+
+
+.toast {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}
+.toast span {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: normal;
+}

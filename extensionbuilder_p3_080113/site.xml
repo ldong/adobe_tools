@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.adobe.cside.html.docs.feature_1.0.0.201307260955.jar" id="com.adobe.cside.html.docs.feature" version="1.0.0.201307260955">
+      <category name="Adobe Extension Builder 3"/>
+   </feature>
+   <feature url="features/com.adobe.cside.html.feature_1.0.0.201307260955.jar" id="com.adobe.cside.html.feature" version="1.0.0.201307260955">
+      <category name="Adobe Extension Builder 3"/>
+   </feature>
+   <category-def name="Adobe Extension Builder 3" label="Adobe Extension Builder 3">
+      <description>
+         Tools, libraries, documentation and samples which enable you to extend the Creative Cloud.
+      </description>
+   </category-def>
+</site>

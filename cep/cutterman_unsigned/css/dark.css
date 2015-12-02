@@ -1,0 +1,361 @@
+/**
+ * gray theme
+ */
+
+.banner {
+    height: 35px;
+    background: #424242;
+    border-bottom: 1px solid #1f1f1f;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .user-icon {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../img/dark/user-icon.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+.banner span {
+    display: block;
+    width: 101px;
+    height: 10px;
+    margin: 13px auto;
+    background: url("../img/dark/logo.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner .setting-icon {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../img/dark/setting-icon.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+
+
+.tab {
+    height: 41px;
+    background: #2d2d2d;
+    text-align: center;
+    border-bottom: 1px solid #434343;
+}
+.tab li {
+    width: 65px;
+    height: 40px;
+    display: inline-block;
+}
+.tab li a {
+    display: block;
+}
+.tab li .ios {
+    width: 16px;
+    height: 20px;
+    margin: 10px auto;
+    background: url("../img/dark/ios-logo.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+.tab li .android {
+    width: 17px;
+    height: 20px;
+    margin: 10px auto;
+    background: url("../img/dark/android-logo.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+.tab li .web {
+    width: 20px;
+    height: 19px;
+    margin: 10px auto;
+    background: url("../img/dark/web-logo.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+.tab li.active {
+    border-bottom: 1px solid #d77d53;
+}
+.tab li.active .ios {
+    background: url("../img/dark/ios-logo-active.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+.tab li.active .android {
+    background: url("../img/dark/android-logo-active.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+.tab li.active .web {
+    background: url("../img/dark/web-logo-active.png") 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+
+
+button.export {
+    display: block;
+    width: 210px;
+    height: 42px;
+    margin: 0 auto;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#6a6a6a), to(#5a5a5a));
+}
+button.export:hover {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#7a7a7a), to(#6a6a6a));
+}
+.export-btn .icon {
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    vertical-align: -3px;
+    margin-right: 5px;
+    background: url("../img/dark/export-icon.png") 50% 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.android-view .export-btn {
+    text-align: center;
+}
+.android-view button.export {
+    width: 160px;
+    display: inline-block;
+}
+.android-view .ninepatch {
+    width: 50px;
+    height: 42px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#6a6a6a), to(#5a5a5a));
+}
+.android-view .ninepatch:hover {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#7a7a7a), to(#6a6a6a));
+}
+
+
+
+.merge-layer {
+    width: 210px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #818485;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.merge-layer .checkbox {
+    float: left;
+    margin-right: 6px;
+}
+
+.fix-size {
+    width: 210px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #818485;
+    margin-bottom: 10px;
+}
+.fix-size input[type=text] {
+    width: 42px;
+    height: 22px;
+    font-size: 12px;
+}
+.fix-size span {
+}
+.fix-size button {
+    font-size: 12px;
+    height: 27px;
+}
+
+.export-dpi {
+    width: 210px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #818485;
+}
+.export-dpi span {
+    margin-right: 11px;
+}
+.export-dpi button {
+    height: 25px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.android-export-dpi span {
+    float: left;
+}
+.android-export-dpi div {
+    margin-left: 52px;
+}
+.android-export-dpi button {
+    margin-bottom: 8px;
+    margin-right: 0px;
+}
+
+.format, .quality {
+    width: 210px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #818485;
+}
+.format span,
+.quality span
+{
+    float: left;
+    margin-top: 5px;
+    margin-right: 27px;
+}
+
+
+.export-location {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+.export-location span.text {
+    margin-left: 10px;
+}
+.export-location .hr {
+    margin-bottom: 10px;
+}
+.location-btn {
+    width: 110px;
+    font-size: 12px;
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.open-dir {
+    width: 30px;
+    height: 25px;
+    vertical-align: -1px;
+}
+.open-dir span {
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    background: url("../img/dark/open-dir.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.quality-jpg input[type=text] {
+    text-align: left;
+    width: 80px;
+    height: 22px;
+    text-indent: 10px;
+}
+.quality div.quality-gif button {
+    padding: 0 6px;
+}
+
+
+/** ----------- user -------------**/
+.user-panel,
+.setting-panel
+{
+    background: #bebebe;
+    position: absolute;
+    width: 190px;
+    height: 100%;
+    text-align: center;
+}
+body.black .user-panel,
+body.dark .user-panel
+{
+    color: #D8D8D8;
+}
+.setting-panel {
+    right: 0;
+}
+.user-panel {
+    font-size:  12px;
+    color: #818485;
+}
+.user-panel img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.user-panel h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #818485;
+}
+.user-panel .buy a {
+    color: #ec514e;
+}
+.user-panel p {
+    margin-bottom: 10px;
+    color: #818485;
+}
+.user-panel .logout {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.user-panel .logout button {
+    clear: both;
+    width: 150px;
+    height: 30px;
+}
+.user-panel a.achivment {
+    color: #ec514e;
+}
+
+/** ----------- user -------------**/
+.setting-panel h2 {
+    font-size: 14px;
+    color: #818485;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.setting-panel .same-file {
+    font-size: 12px;
+    margin: 10px 0;
+}
+.setting-panel .same-file span {
+    vertical-align: 8px;
+}
+.setting-panel .custom-dpi-block {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+}
+.setting-panel .custom-dpi-block .text {
+    vertical-align: 4px;
+}
+.setting-panel .custom-dpi-sub {
+    text-align: center;
+    margin-top: 10px;
+}
+.setting-panel .current-dpi {
+    text-align: left;
+    margin-top: 8px;
+}
+.setting-panel .current-dpi-list {
+    vertical-align: -4px;
+    text-align: left;
+    text-indent: 8px;
+}
+.setting-panel .custom-dpi-list {
+    margin-top: 10px;
+}
+.setting-panel .custom-dpi-list li {
+    margin-bottom: 4px;
+}
+.setting-panel .custom-dpi-list span {
+    display: inline-block;
+    width: 68px;
+    text-align: right;
+    margin-right: 8px;
+}
+.setting-panel .custom-dpi-list input {
+    width: 60px;
+}

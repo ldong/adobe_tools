@@ -1,0 +1,681 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 nobomb: */
+
+/**
+ * filename.css
+ *
+ * @author xiaoqiang
+ * @mail   qiang0902@126.com
+ * @date
+ */
+
+.buttons {
+    margin-top: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.buttons ul {
+    margin-left: 5px;
+    overflow: hidden;
+}
+.buttons li {
+    list-style: none;
+    margin: 5px;
+    float: left;
+}
+.buttons p {
+    font-size: 12px;
+}
+body.dark .buttons p,
+body.black .buttons p
+{
+    color: #aaaaaa;
+}
+
+.button {
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    position: relative;
+}
+
+.btn-action {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #727272;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.btn-action:hover {
+    background-color: #666;
+}
+.button .btn-option {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    background: #555555 url(../img/option-arrow.png) 50% 50% no-repeat;
+}
+.button .btn-option:hover {
+    background-color: #666;
+}
+
+body.dark .button .btn-option {
+    background-color: #666;
+}
+body.dark .button .btn-option:hover {
+    background-color: #777;
+}
+
+/** ---- widget ----- **/
+button.white {
+    clear: both;
+    width: 150px;
+    height: 26px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999;
+}
+button.white:hover {
+    background: #eee;
+}
+a.color-picker-btn {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    border: 1px solid #979797;
+    vertical-align: -3px;
+}
+.input-small
+{
+    width: 80px;
+    height: 22px;
+    border: 1px solid #979797;
+    border-radius: 3px;
+    text-indent: 8px;
+    box-shadow: 1px 1px 1px #bbb inset;
+}
+input.checkbox
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    -webkit-appearance: none;
+    -webkit-mask-repeat: round;
+    -webkit-mask-size: 12px;
+    -webkit-mask-position: right;
+    vertical-align: -3px;
+}
+input.checked,
+input.checked
+{
+    background: url(../img/checked.png) 0 0 no-repeat;
+}
+input.uncheck,
+input.uncheck
+{
+    background: url(../img/unchecked.png) 0 0 no-repeat;
+}
+
+.selector {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.selector .text {
+    margin-left: 6px;
+    font-size: 12px;
+}
+.selector .arr {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../img/arrow-black.png) 50% 50% no-repeat;
+}
+.toast {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}
+.toast span {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.dialog {
+    position: absolute;
+    top: 70px;
+    width: 230px;
+    margin-left: 10px;
+    border-radius: 6px;
+    z-index: 20;
+}
+
+.corner-switch {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.corner-switch label {
+    text-align: left;
+}
+body.black .dialog,
+body.dark .dialog {
+    background: #444;
+    box-shadow: 2px 2px 3px #333;
+    color: #D8D8D8;
+}
+
+body.gray .dialog,
+body.white .dialog
+{
+    background: #bbb;
+    box-shadow: 2px 2px 3px #666;
+}
+
+.dialog h3 {
+    font-weight: normal;
+    font-size:  14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.dialog p {
+    font-size: 12px;
+    margin: 5px 20px;
+    line-height: 20px;
+}
+.dialog div {
+    margin: 10px;
+}
+
+/**------ widget end ----------------*/
+
+
+.position-top-left {
+    background-image: url(../img/position-top-left.png?xx);
+}
+.position-top-right {
+    background-image: url(../img/position-top-right.png?xx);
+}
+.position-bottom-right {
+    background-image: url(../img/position-bottom-right.png?xx);
+}
+.position-bottom-left {
+    background-image: url(../img/position-bottom-left.png?xx);
+}
+
+.dimension-width-height {
+    background-image: url(../img/dimension-both.png?xx);
+}
+.dimension-height {
+    background-image: url(../img/dimension-right.png?xx);
+}
+.dimension-width {
+    background-image: url(../img/dimension-bottom.png?xx);
+}
+.dimension-middle-vertical {
+    background-image: url(../img/dimension-middle.png?xx);
+}
+
+.edge-left,
+.padding-left
+{
+    background-image: url(../img/edge-left.png?xx);
+}
+.edge-right,
+.padding-right
+{
+    background-image: url(../img/edge-right.png?xx);
+}
+.edge-bottom,
+.padding-bottom
+{
+    background-image: url(../img/edge-bottom.png?xx);
+}
+.edge-top,
+.padding-top
+{
+    background-image: url(../img/edge-top.png?xx);
+}
+
+.distance-horizontal {
+    background-image: url(../img/distance-horizon.png?xx);
+}
+.distance-vertical {
+    background-image: url(../img/distance-vertical.png?xx);
+}
+
+.btn-description {
+    background-image: url(../img/btn-description.png?xx);
+}
+
+.btn-font {
+    background-image: url(../img/btn-font.png?xx);
+}
+
+.btn-color {
+    background-image: url(../img/btn-color.png?xx);
+}
+
+.btn-padding {
+    background-image: url(../img/btn-padding.png?xx);
+}
+
+.btn-rectangle {
+    background-image: url(../img/btn-rectangle.png?xx);
+}
+
+
+
+.export-btn button {
+    width: 240px;
+    height: 32px;
+    border: none;
+    background: #2196F3;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: 0 2px 2px #999;
+    margin-bottom: 10px;
+}
+.export-btn button:hover {
+    background: #379FF2;
+}
+body.dark .export-btn button,
+body.black .export-btn button
+{
+    box-shadow: 0 2px 2px #333;
+}
+
+/** --------- layer -----------*/
+.cover {
+    background: #000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+}
+
+.layers {
+    width: 250px;
+    /*height: 126px;*/
+    padding-bottom: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    background: #B6B6B6;
+    z-index: 9;
+    box-shadow: 0 3px 0px #555;
+}
+
+.layers .confirm button {
+    clear: both;
+    width: 150px;
+    height: 32px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: 0 1px 4px #999;
+}
+.layers .confirm button:hover {
+    background: #eee;
+}
+
+.position-layer,
+.dimension-layer,
+.distance-layer,
+.padding-layer,
+.edge-layer
+{
+    margin-left: 5px;
+}
+.position-layer li,
+.edge-layer li,
+.distance-layer li,
+.padding-layer li,
+.dimension-layer li
+{
+    float: left;
+    margin: 10px 5px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.position-layer li a,
+.edge-layer li a,
+.distance-layer li a,
+.padding-layer li a,
+.dimension-layer li a,
+{
+    display: inline-block;
+}
+.position-layer li a.selected,
+.edge-layer li a.selected,
+.distance-layer li a.selected,
+.padding-layer li a.selected,
+.dimension-layer li a.selected
+{
+    background-color: #03A9F4;
+}
+
+.description-layer textarea {
+    width: 220px;
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid #979797;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #999 inset;
+}
+
+.layers .description-layer .confirm button {
+    margin-top: 0px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+
+.font-layer ul,
+.color-layer ul
+{
+    margin-top: 15px;
+}
+.font-layer li,
+.color-layer li
+{
+    display: inline-block;
+    width: 70px;
+    margin-top: 5px;
+}
+.font-layer .direction {
+    position: relative;
+    width: 110px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.font-layer .text {
+    line-height: 20px;
+}
+.font-layer .right {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background: url(../img/arrow-right.png) 50% 50% no-repeat;
+}
+.font-layer .bottom {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    left: 50px;
+    background: url(../img/arrow-top.png) 50% 50% no-repeat;
+}
+.font-layer .bottom-select {
+    background: url(../img/arrow-top-select.png) 50% 50% no-repeat;
+}
+.font-layer .right-select {
+    background: url(../img/arrow-right-select.png) 50% 50% no-repeat;
+}
+
+
+
+.color-layer ul {
+    width:  220px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.color-layer li {
+    text-align: left;
+}
+
+
+
+.rect-layer div:first-child {
+    margin: 10px;
+}
+.rect-layer input[name=width] {
+    margin-right: 20px;
+}
+.rect-layer input[name=rect-opacity] {
+    width: 42px;
+    margin-left: 8px;
+}
+.rect-layer a.color-picker-btn {
+    margin-right:  20px;
+    margin-left:  8px;
+}
+
+
+
+
+/** ----------- user -------------**/
+.user-panel,
+.setting-panel
+{
+    background: #D8D8D8;
+    position: absolute;
+    width: 190px;
+    height: 100%;
+    text-align: center;
+}
+body.black .user-panel,
+body.dark .user-panel
+{
+    color: #D8D8D8;
+}
+.setting-panel {
+    right: 0;
+}
+.user-panel {
+    font-size:  12px;
+}
+.user-panel img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.user-panel h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.user-panel .buy a {
+    color: #ec514e;
+}
+.user-panel p {
+    margin-bottom: 10px;
+}
+.user-panel .logout {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.user-panel .logout button {
+    clear: both;
+    width: 150px;
+    height: 26px;
+    border: none;
+    background: #FAFAFA;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999;
+}
+.user-panel .logout button:hover {
+    background: #eee;
+}
+
+
+/** -------- setting panel ----------- **/
+.setting-panel {
+}
+.setting-panel dl {
+    margin: 10px;
+    background: #fafafa;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #999;
+    text-align: left;
+    padding-bottom: 6px;
+    position: relative;
+}
+body.dark .setting-panel dl,
+body.black .setting-panel dl
+{
+    box-shadow: 1px 1px 2px #333;
+}
+
+.setting-panel .options {
+    position: absolute;
+    right: 28px;
+    background: #fafafa;
+    border: 1px solid #bbbbbb;
+    width: 80px;
+    border-bottom: none;
+}
+.setting-panel .options a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: left;
+    text-indent:  7px;
+}
+.setting-panel .options a:hover {
+    background: #bbbbbb;
+}
+.setting-panel .dpi {
+    top: 120px;
+}
+.setting-panel .unit {
+    top: 206px;
+}
+.setting-panel .colorType {
+    top: 236px;
+}
+
+.setting-panel dt {
+    font-size:  14px;
+    color: #444;
+    text-indent: 10px;
+    line-height: 30px;
+}
+.setting-panel dd {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #4a4a4a;
+}
+.setting-panel label {
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+/** ------- color picker --------*/
+.color-picker {
+    position: absolute;
+    z-index: 12;
+    background: #D8D8D8;
+    width: 200px;
+    margin-left:  25px;
+    margin-top: 70px;
+    box-shadow: 0 1px 4px #999;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+.color-picker h3 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #444;
+    text-align: left;
+    line-height: 30px;
+    text-indent: 10px;
+    width: 100%;
+}
+.color-picker h3 a {
+    float: right;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #03A9F4;
+}
+.color-picker li {
+    text-align: left;
+}
+.color-picker li a:first-child {
+    display: inline-block;
+    width: 150px;
+    height: 22px;
+    line-height: 22px;
+    background: #03A9F4;
+    margin-left: 10px;
+    float: left;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-indent: 6px;
+}
+.color-picker a.delete {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/del-color.png) 50% 50% no-repeat;
+}
+.color-picker a.delete:hover {
+    background: url(../img/del-color-hover.png) 50% 50% no-repeat;
+}
+.color-picker .add {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.color-picker .input-small {
+    width: 100px;
+}
+.color-picker button {
+    width: 60px;
+}
+.color-picker .max {
+    font-size: 12px;
+    margin: 0 10px;
+    text-align: left;
+}
