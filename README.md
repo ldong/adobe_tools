@@ -2,11 +2,11 @@
 
 1. After development, sign via
 
-  ```
+   ```
 	ZXPSignCmd -selfSignedCert <countryCode> <stateOrProvince> <organization> <commonName> <password> <outputPath.p12>
 	./ZXPSignCmd -selfSignedCert US California Hello "John Doe" myPassword myCertificate.p12
     ./ZXPSignCmd -sign ../cep/packer_unsigned cutterman myCertificate.p12 myPassword
-	```
+    ```
 
 2. rename `cutterman.zxp` to `cutterman.zip`
 3. unzip cutterman.zip
